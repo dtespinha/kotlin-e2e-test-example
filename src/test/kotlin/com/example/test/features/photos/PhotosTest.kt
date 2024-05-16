@@ -1,7 +1,7 @@
 package com.example.test.features.photos
 
 import com.example.test.TestInitialization
-import com.example.test.dto.PhotosDTO
+import com.example.test.dto.PhotoDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -16,14 +16,14 @@ class PhotosTest : TestInitialization() {
 	@DisplayName("when calling jsonplaceholder photos, it should return 200 OK")
 	fun `when calling jsonplaceholder photos, it should return 200 OK`() {
 
-		val responseExpected =  PhotosDTO(1, 1, "accusamus beatae ad facilis cum similique qui sunt",
+		val responseExpected =  PhotoDTO(1, 1, "accusamus beatae ad facilis cum similique qui sunt",
 			"https://via.placeholder.com/600/92c952", "https://via.placeholder.com/150/92c952")
 
 		val response = httpRequestDefs.doGet(mapHeaders,"https://jsonplaceholder.typicode.com/photos/1")
 		assertEquals(HttpStatus.OK, response.statusCode)
 
 		val responseActual = objectMapper.readValue(requireNotNull(response.body).toString(),
-			PhotosDTO::class.java)
+			PhotoDTO::class.java)
 
 		assertThat(responseActual).usingRecursiveComparison().isEqualTo(responseExpected)
 	}

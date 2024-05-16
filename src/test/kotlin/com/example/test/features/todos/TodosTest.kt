@@ -1,7 +1,7 @@
 package com.example.test.features.todos
 
 import com.example.test.TestInitialization
-import com.example.test.dto.TodosDTO
+import com.example.test.dto.TodoDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -16,13 +16,13 @@ class TodosTest : TestInitialization() {
 	@DisplayName("when calling jsonplaceholder todo, it should return 200 OK")
 	fun `when calling jsonplaceholder todos, it should return 200 OK`() {
 
-		val responseBodyExpected = TodosDTO(1, 1, "delectus aut autem", false)
+		val responseBodyExpected = TodoDTO(1, 1, "delectus aut autem", false)
 
 		val response = httpRequestDefs.doGet(mapHeaders,"https://jsonplaceholder.typicode.com/todos/1")
 		assertEquals(HttpStatus.OK, response.statusCode)
 
 		val responseBodyActual = objectMapper.readValue(requireNotNull(response.body).toString(),
-			TodosDTO::class.java)
+			TodoDTO::class.java)
 
 
 		assertThat(responseBodyActual).usingRecursiveComparison().isEqualTo(responseBodyExpected)

@@ -1,6 +1,6 @@
 package com.example.test.dto
 
-data class PhotosDTO (
+data class PhotoDTO (
 
     var albumId: Int? = null,
     var id: Int? = null,

@@ -1,6 +1,6 @@
 package com.example.test.dto
 
-data class TodosDTO (
+data class TodoDTO (
 
     var userId: Int? = null,
     var id: Int? = null,
