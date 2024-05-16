@@ -1,6 +1,6 @@
-package com.example.demo
+package com.example.test
 
-import com.example.demo.config.HttpRequestDefs
+import com.example.test.config.HttpRequestDefs
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest

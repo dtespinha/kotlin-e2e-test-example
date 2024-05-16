@@ -1,4 +1,4 @@
-package com.example.demo.config
+package com.example.test.config
 
 import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.http.*

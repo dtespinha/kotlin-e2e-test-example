@@ -1,7 +1,7 @@
-package com.example.demo.features.todos
+package com.example.test.features.todos
 
-import com.example.demo.TestInitialization
-import com.example.demo.dto.TodosDTO
+import com.example.test.TestInitialization
+import com.example.test.dto.TodosDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance

@@ -1,7 +1,7 @@
-package com.example.demo.features.photos
+package com.example.test.features.photos
 
-import com.example.demo.TestInitialization
-import com.example.demo.dto.PhotosDTO
+import com.example.test.TestInitialization
+import com.example.test.dto.PhotosDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
