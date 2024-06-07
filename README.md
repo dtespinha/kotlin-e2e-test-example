@@ -1,6 +1,4 @@
 # kotlin-e2e-test-example
-
-# kotlin-integration-test-example
 Integration testes examples using kotlin. Database access examples are commented.
 
 # Requirements
