@@ -30,8 +30,8 @@ jobs:
         if: always()
         continue-on-error: true
         with:
-          ref: gh-pages
-          path: gh-pages
+          ref: feature/test
+          path: feature/test
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@master
@@ -49,4 +49,4 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: dtespinha/allure-public
           publish_branch: allure_history
-          publish_dir: ./public
+          publish_dir: allure-history
