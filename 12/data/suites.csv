@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 11 21:10:13 GMT 2024","Tue Jun 11 21:10:14 GMT 2024","1070","","com.example.test.features.photos.PhotosTest","","com.example.test.features.photos.PhotosTest","when calling jsonplaceholder photos, it should return 200 OK","when calling jsonplaceholder photos, it should return 200 OK",""
+"passed","Tue Jun 11 21:10:14 GMT 2024","Tue Jun 11 21:10:14 GMT 2024","31","","com.example.test.features.todos.TodosTest","","com.example.test.features.todos.TodosTest","when calling jsonplaceholder todos, it should return 200 OK","when calling jsonplaceholder todo, it should return 200 OK",""
