@@ -6,3 +6,6 @@ Integration testes examples using kotlin. Database access examples are commented
 
 ## Running
 * `./gradlew test` will run the tests.
+
+## Allure Report
+https://dtespinha.github.io/kotlin-e2e-test-example/12/index.html
